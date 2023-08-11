@@ -12,7 +12,7 @@ html=requests.get(url)
 sp=BeautifulSoup(html.text,"lxml")
 # 找到威力彩的區域
 datas=sp.find("div",class_="contents_box02")
-# 開講期數
+# 開獎期數
 title=datas.find("span","font_black15").text
 print("威力採期數:",title)
 # 開獎號碼
